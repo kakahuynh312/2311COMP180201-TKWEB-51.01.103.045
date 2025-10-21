@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        li{list-style-type: none; padding-left: 10px;}
+        
+        .hh-sheet{
+            box-shadow: 0 0 5px lightgray;
+            border-radius: 10px;
+            padding: 5px;
+            position: relative;
+            top:-10px ;
+            margin-top: 20px;
+        }        
+        .hh-header{
+            position: relative;
+            height:170px ;
+        }      
+        .hh-cart ul{
+            padding: 0px;
+            margin: 0px;
+            list-style: none;
+            font-size: smaller;
+        }
+        .hh-card{
+            margin: 7px;
+        }
+        .hh-product{
+            text-align: center; display: inline-block; padding: 5px 2px;
+            
+        }
+        .hh-product .card{ height: 100%;}
+        
+        .hh-product .card-body img{
+            height: 150px;
+            max-width: 95%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" style="height: auto;">
+        <header style="position: relative; height: 150px;">
+            <h1 style="text-shadow: 0 0 2px black; position: absolute; top: 45px; padding-bottom: 1px; border-bottom: 1px dotted gray;">FIT-HCMUE Shop</h1>
+            <h4 style="position: absolute; top: 100px; padding-top: 15px;">Bring knowledge to everyone</h4>
+            <img src="./img/pngtree-a-designer-man-work-on-computers-png-image_12650926.png" alt="logo" width="300px" height="260px"
+            style="position: absolute;right: 0px; top: 0; " >
+        </header>
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" style="margin-top: 100px;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./trangchu.html">Trang chủ</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./danhsach.html">Danh sách</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sanpham.html">Sản phẩm</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Liên hệ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Hỏi đáp</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Tài khoản
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Đăng nhập</a></li>
+                                <li><a class="dropdown-item" href="#">Đăng xuất</a></li>
+                                <!-- <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                            </ul>
+                        </li>               
+                    </ul>
+                    <nav class="navbar bg-body-tertiary">
+                        <div class="container-fluid">
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">English</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Tiếng Việt</a>
+                            </li>
+                        </div>
+                    </nav>                   
+                </div>
+            </div>
+        </nav>
+        
+        
+        <div class="hh-sheet row mt-3">
+            <!-- Cột trái: sản phẩm -->
+            <div class="col-md-9">
+                <div class="row">
+                    
+                    <div class="col-sm-4 hh-product">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">IPhone 14</h4>
+                            </div>
+                            <div class="card-body">
+                                <a href="./sanpham.html"><img src="./img/iphone-14-pro-max-tim-thumb-600x600.jpg" alt="" width="auto" height="auto"></a>
+                            </div>
+                            <div class="card-footer text-center">$1019.9</div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 hh-product">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">IPhone 14</h4>
+                            </div>
+                            <div class="card-body">
+                                <a href="./sanpham.html"><img src="./img/iphone-14-pro-max-tim-thumb-600x600.jpg" alt="" width="auto"></a>
+                            </div>
+                            <div class="card-footer text-center">$1019.9</div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 hh-product">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">IPhone 14</h4>
+                            </div>
+                            <div class="card-body">
+                                <a href="./sanpham.html"><img src="./img/iphone-14-pro-max-tim-thumb-600x600.jpg" ></a>
+                            </div>
+                            <div class="card-footer text-center">$1019.9</div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 hh-product">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">IPhone 14</h4>
+                            </div>
+                            <div class="card-body">
+                                <a href="./sanpham.html"><img src="./img/iphone-14-pro-max-tim-thumb-600x600.jpg"></a>
+                            </div>
+                            <div class="card-footer text-center">$1019.9</div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 hh-product">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">IPhone 14</h4>
+                            </div>
+                            <div class="card-body">
+                                <a href="./sanpham.html"><img src="./img/iphone-14-pro-max-tim-thumb-600x600.jpg" ></a>
+                            </div>
+                            <div class="card-footer text-center">$1019.9</div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 hh-product">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">IPhone 14</h4>
+                            </div>
+                            <div class="card-body">
+                                <a href="./sanpham.html"><img src="./img/iphone-14-pro-max-tim-thumb-600x600.jpg" ></a>
+                            </div>
+                            <div class="card-footer text-center">$1019.9</div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 hh-product">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">IPhone 14</h4>
+                            </div>
+                            <div class="card-body">
+                                <a href="./sanpham.html"><img src="./img/iphone-14-pro-max-tim-thumb-600x600.jpg"></a>
+                            </div>
+                            <div class="card-footer text-center">$1019.9</div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 hh-product">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">IPhone 14</h4>
+                            </div>
+                            <div class="card-body">
+                                <a href="./sanpham.html"><img src="./img/iphone-14-pro-max-tim-thumb-600x600.jpg" ></a>
+                            </div>
+                            <div class="card-footer text-center">$1019.9</div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 hh-product">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">IPhone 14</h4>
+                            </div>
+                            <div class="card-body">
+                                <a href="./sanpham.html"><img src="./img/iphone-14-pro-max-tim-thumb-600x600.jpg"></a>
+                            </div>
+                            <div class="card-footer text-center">$1019.9</div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 hh-product">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">IPhone 14</h4>
+                            </div>
+                            <div class="card-body">
+                                <a href="./sanpham.html"><img src="./img/iphone-14-pro-max-tim-thumb-600x600.jpg"></a>
+                            </div>
+                            <div class="card-footer text-center">$1019.9</div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 hh-product">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">IPhone 14</h4>
+                            </div>
+                            <div class="card-body">
+                                <a href="./sanpham.html"><img src="./img/iphone-14-pro-max-tim-thumb-600x600.jpg"></a>
+                            </div>
+                            <div class="card-footer text-center">$1019.9</div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 hh-product">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">IPhone 14</h4>
+                            </div>
+                            <div class="card-body">
+                                <a href="./sanpham.html"><img src="./img/iphone-14-pro-max-tim-thumb-600x600.jpg"></a>
+                            </div>
+                            <div class="card-footer text-center">$1019.9</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cột phải -->
+            <div class="col-md-3">
+                <!-- Giỏ hàng -->
+                <div class="card mb-3 hh-cart" >
+                    <div class="card-header">
+                        <strong>Giỏ hàng</strong>
+                    </div>
+                    <div class="card-body " style=" display: grid; grid-template-columns: 40% 50%;">
+                        <img src="./img/pngtree-shopping-cart-png-image_15664658.png" width="100px">
+                        <ul>
+                            <li>10 sp</li>
+                            <li>5,000,000 đ</li>
+                            <li><a href="#">Giỏ hàng</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Tìm kiếm -->
+                <div class="card mb-3 hh-card">
+                    <div class="card-header">
+                        <i class="fab fa-apple"></i> <strong>Tìm kiếm</strong>
+                    </div>
+                    <div class="card-body">
+                        <input type="text" class="form-control" placeholder="Keywords">
+                    </div>
+                </div>
+
+                <!-- Chủng loại -->
+                <div class="card hh-card">
+                    <div class="card-header">
+                        <i class="fas fa-list"></i> <strong>Chủng loại</strong>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Điện thoại</li>
+                        <li class="list-group-item">Laptop</li>
+                        <li class="list-group-item">Tablet</li>
+                        <li class="list-group-item">Điều hòa</li>
+                        <li class="list-group-item">Tivi</li>
+                        <li class="list-group-item">Tủ lạnh</li>
+                        <li class="list-group-item">Điện gia dụng</li>
+                    </ul>
+                </div>
+
+                <!-- nhà cung cấp -->
+                <div class="card hh-card">
+                    <div class="card-header">
+                        <i ></i> <strong>Nhà cung cấp</strong>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Apple</li>
+                        <li class="list-group-item">Samsung</li>
+                        <li class="list-group-item">Nokia</li>
+                        <li class="list-group-item">GL</li>
+                        <li class="list-group-item">Sony Ericson</li>
+                        <li class="list-group-item">Acer</li>
+                        <li class="list-group-item">HP</li>
+                        <li class="list-group-item">Deik</li>
+                        <li class="list-group-item">Toshiba</li>
+                    </ul>
+                </div>
+
+                <!-- hàng đặc biệt -->
+                 <div class="card hh-card">
+                    <div class="card-header">
+                        <i ></i> <strong>Hàng đặc biệt</strong>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Hàng bán chạy</li>
+                        <li class="list-group-item">Hàng mới</li>
+                        <li class="list-group-item">Hàng giảm giá</li>
+                        <li class="list-group-item">Hàng yêu thích</li>
+                        <li class="list-group-item">Hàng xem nhiều</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <footer class="row card">
+            <div class="card-body text-center">
+                FIT-HCMUE &copy; 2023
+            </div>
+        </footer>
+    </div>    
+</body>
+</html>

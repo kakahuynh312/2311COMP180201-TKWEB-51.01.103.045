@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Lễ Hội Halloween 2025 </title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-size: cover;
+      color: white;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      border-bottom: 3px solid orange;
+    }
+
+    h1 {
+      color: orange;
+      text-shadow: 0 0 15px black;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin: 0 15px;
+    }
+
+    nav a {
+      color: orange;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: white;
+      text-shadow: 0 0 10px orange;
+    }
+
+    main {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .intro {
+      background: rgba(0, 0, 0, 0.6);
+      display: inline-block;
+      padding: 30px;
+      border-radius: 15px;
+      max-width: 600px;
+      box-shadow: 0 0 15px orange;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      background: orange;
+      color: black;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: white;
+      color: orange;
+    }
+
+    footer {
+      margin-top: 60px;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 15px;
+      border-top: 2px solid orange;
+    }
+
+    /* Bóng ma bay */
+    #ghost {
+      position: absolute;
+      top: 120px;
+      left: -150px;
+      width: 100px;
+      z-index: 5;
+      animation: fly 12s linear infinite;
+    }
+
+    @keyframes fly {
+      0% { left: -150px; opacity: 0.2; transform: scale(0.8); }
+      25% { opacity: 1; }
+      50% { top: 160px; transform: scale(1.2); }
+      75% { top: 100px; opacity: 0.9; }
+      100% { left: 110%; opacity: 0.2; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>ĐÊM HỘI HALLOWEEN 🎃</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Trang chủ</a></li>
+        <li><a href="#">Giới thiệu</a></li>
+        <li><a href="#">Sản phẩm</a></li>
+        <li><a href="#">Hình ảnh</a></li>
+        <li><a href="#">Liên hệ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <img id="ghost" src="https://i.imgur.com/q6qjYVf.png" alt="ghost">
+
+    <div class="intro">
+      <h2>🎃 Chào mừng đến với lễ hội Halloween năm 2025!</h2>
+      <p>
+        Hãy cùng tham gia đêm hội ma quái, hóa thân thành những nhân vật đáng sợ, 
+        cùng tiếng cười và ánh sáng lấp lánh của bí ngô!
+      </p>
+
+      <audio controls autoplay loop>
+        <source src="https://cdn.pixabay.com/download/audio/2022/03/22/audio_1ee4e1eae9.mp3?filename=spooky-halloween-ambient-music-11181.mp3" type="audio/mpeg">
+      </audio>
+
+      <br>
+      <a href="#" class="btn" onclick="register()">Đăng ký tham gia</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Halloween Party | Thiết kế bởi Nhóm 3 | HTML5 + CSS3 + JS</p>
+  </footer>
+
+  <script>
+    // Khi người dùng bấm nút Đăng ký
+    function register() {
+      alert("🎃 Cảm ơn bạn đã quan tâm! Hãy chuẩn bị trang phục ma quái của mình nhé!");
+    }
+
+    // Hiệu ứng tiêu đề
+    document.querySelector("h1").style.opacity = "0";
+    setTimeout(() => {
+      document.querySelector("h1").style.transition = "opacity 2s";
+      document.querySelector("h1").style.opacity = "1";
+    }, 300);
+  </script>
+
+
+
+
+  <!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liên hệ - Đêm hội Halloween</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    h1 {
+      color: orange;
+      text-shadow: 0 0 15px #ff6600;
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+
+    form {
+      background-color: rgba(0, 0, 0, 0.75);
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255, 140, 0, 0.6);
+      width: 90%;
+      max-width: 450px;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      color: #ff9933;
+      font-weight: 500;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+      font-size: 1rem;
+      background-color: #1a1a1a;
+      color: #fff;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    input:focus, textarea:focus {
+      border: 2px solid orange;
+      box-shadow: 0 0 10px #ff6600;
+    }
+
+    textarea {
+      resize: none;
+      height: 120px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background: linear-gradient(90deg, #ff6600, #ff9900);
+      border: none;
+      border-radius: 8px;
+      color: #fff;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-top: 15px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #ff6600;
+    }
+
+     .success-message {
+      display: none;
+      margin-top: 20px;
+      text-align: center;
+      color: #66ff99;
+      font-weight: bold;
+      text-shadow: 0 0 8px #33cc66;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+
+    .show {
+      display: block !important;
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Liên hệ với chúng tôi</h1>
+
+  <form id="contactForm">
+    <label for="name">Họ và tên:</label>
+    <input type="text" id="name" name="name" placeholder="Nhập tên của bạn" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Nhập email" required>
+
+    <label for="message">Lời nhắn:</label>
+    <textarea id="message" name="message" placeholder="Viết lời nhắn..." required></textarea>
+
+    <button type="submit">Gửi liên hệ </button>
+  </form>
+
+  <div class="success-message" id="successMessage">
+    🎉 Cảm ơn bạn đã gửi liên hệ! Chúng tôi sẽ phản hồi sớm nhất có thể.
+  </div>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- <script>
+    $(document).ready(function(){
+      $("#contactForm").on("submit", function(event){
+        event.preventDefault(); // Ngăn form reload trang
+        $("#successMessage").fadeIn(500).delay(2500).fadeOut(800);
+        $(this)[0].reset(); // Xóa nội dung form
+      });
+    });
+  </script> -->
+
+  <script>
+    // Khi trang tải xong
+    document.addEventListener('DOMContentLoaded', function() {
+      const form = document.getElementById('contactForm');
+      const successMessage = document.getElementById('successMessage');
+
+      form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Ngăn reload trang
+
+        // Hiện thông báo
+        successMessage.classList.add('show');
+
+        // Ẩn lại sau 3 giây
+        setTimeout(() => {
+          successMessage.classList.remove('show');
+        }, 3000);
+
+        // Reset nội dung form
+        form.reset();
+      });
+    });
+  </script>
+
+</body>
+</html>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản phẩm Halloween</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: #0d0d0d;
+    color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+
+  h2 { 
+    text-align: center;
+    padding: 60px 20px;
+    color: orange;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 0 0 20px #ff6600;
+  }
+
+  .shop-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 40px;
+  }
+
+  .item {
+    background-color: #1c1c1c;
+    border: 2px solid #ff6600;
+    border-radius: 12px;
+    width: 220px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+  }
+
+  .item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ff6600;
+  }
+
+  .item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+  }
+
+  .item h3 {
+    margin: 10px 0;
+    color: orange;
+  }
+
+  .price {
+    color: #ff9933;
+    margin-bottom: 10px;
+  }
+
+  .detail {
+    display: none;
+    padding: 10px;
+    background-color: #2a2a2a;
+    border-top: 1px solid #ff6600;
+    font-size: 0.9rem;
+  }
+
+    
+</style>
+
+
+
+
+</head>
+<body class="nenphu">
+    <header class="header">
+        <img src="./halloween/Iconcreme-Halloween-Pumpkin.512.png" width="80px" style="position: absolute; left: 20px; top: 0px;">
+        <img src="./halloween/Iconcreme-Halloween-Bat.512.png" width="80px" style="position: absolute; right: 20px; top: 0px;">
+    
+        <nav>
+        <ul>
+            <li><a href="./trangchu.html">Trang chủ</a></li>
+            <li><a href="./lich_su_halloween.html">Giới thiệu</a></li>
+            <li><a href="./san_pham_halloween.html">Sản phẩm</a></li>
+            <li><a href="./bo_suu_tap_anh_halloween.html">Hình ảnh</a></li>
+            <li><a href="./trang_lien_he.html">Liên hệ</a></li>
+            <li><a href="./dang_ky.html">Đăng ký</a></li>
+        </ul>
+        </nav>
+    </header>
+    <div style="text-align: center; margin-top: 40px;">
+        
+        <h2>Gian Hàng Sản Phẩm Halloween</h2>
+
+        <div class="shop-container">
+        <div class="item">
+            <img src="" alt="Bí ngô ma quái">
+            <h3>Bí Ngô Ma Quái</h3>
+            <p class="price">120.000đ</p>
+           
+        <div class="item">
+            <img src="./halloween/mat-na-halloween-bi-ngo.jpg" alt="Mặt nạ máu" width="200px">
+            <h3>Mặt Nạ Bí ngô</h3>
+            <p class="price">80.000đ</p>
+          
+        </div>
+
+        <div class="item">
+            <img src="" alt="Kẹo đầu lâu">
+            <h3>Kẹo Đầu Lâu</h3>
+            <p class="price">50.000đ</p>
+          
+        </div>
+
+        <div class="item">
+            <img src="./halloween/aochoangphuthuy.jpg" alt="Áo choàng phù thủy" width="200px">
+            <h3>Áo Choàng Phù Thủy</h3>
+            <p class="price">220.000đ</p>
+           
+        </div>
+        </div>
+
+                
+
+    </div>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bộ sưu tập Halloween</title>
+
+  <style>
+    :root {
+      --main-color: #ff6600;
+      --bg-dark: #0a0a0a;
+      --text-light: #fff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-light);
+    }
+
+    header {
+      background-color: rgba(0,0,0,0.8);
+      text-align: center;
+      padding: 20px 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 0 15px rgba(255, 100, 0, 0.6);
+    }
+
+    header h1 {
+      color: var(--main-color);
+      text-shadow: 0 0 10px #ff6600;
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    .container {
+      margin-top: 120px;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .product {
+      background-color: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 10px;
+      text-align: center;
+      padding: 20px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .product:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 20px rgba(255, 120, 0, 0.5);
+    }
+
+    .product img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .product h3 {
+      margin: 10px 0;
+      color: var(--main-color);
+    }
+
+    .product p {
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+
+    .product button {
+      margin-top: 10px;
+      padding: 10px 15px;
+      background-color: var(--main-color);
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .product button:hover {
+      background-color: #ff8533;
+    }
+
+    /* Thông báo khi thêm vào giỏ */
+    .alert {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: rgba(0,0,0,0.85);
+      color: #66ff99;
+      padding: 12px 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #00ff99;
+      opacity: 0;
+      transition: opacity 0.4s;
+      font-weight: bold;
+    }
+
+    .alert.show {
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>🎃 Bộ Sưu Tập Sản Phẩm Halloween 🎃</h1>
+  </header>
+
+  <div class="container">
+    <div class="product">
+      <img src="https://i.ibb.co/t2LkRpx/halloween-mask.jpg" alt="Mặt nạ ma quỷ">
+      <h3>Mặt nạ ma quỷ</h3>
+      <p>Ánh sáng LED đỏ rực, khiến buổi đêm thêm rùng rợn.</p>
+      <button onclick="addToCart('Mặt nạ ma quỷ')">Thêm vào giỏ</button>
+    </div>
+
+    <div class="product">
+      <img src="https://i.ibb.co/d2pF9Yq/halloween-candle.jpg" alt="Nến ma thuật">
+      <h3>Nến ma thuật</h3>
+      <p>Ngọn nến đổi màu, lan tỏa hương thơm bí ẩn của đêm hội.</p>
+      <button onclick="addToCart('Nến ma thuật')">Thêm vào giỏ</button>
+    </div>
+
+    <div class="product">
+      <img src="https://i.ibb.co/4t5nV5W/pumpkin-basket.jpg" alt="Giỏ bí ngô">
+      <h3>Giỏ bí ngô</h3>
+      <p>Phụ kiện kinh điển cho màn “Trick or Treat” cùng bạn bè.</p>
+      <button onclick="addToCart('Giỏ bí ngô')">Thêm vào giỏ</button>
+    </div>
+
+    <div class="product">
+      <img src="https://i.ibb.co/XzPByQ6/witch-hat.jpg" alt="Mũ phù thủy">
+      <h3>Mũ phù thủy</h3>
+      <p>Trang phục huyền bí không thể thiếu cho buổi hóa trang.</p>
+      <button onclick="addToCart('Mũ phù thủy')">Thêm vào giỏ</button>
+    </div>
+  </div>
+
+  <div id="alertBox" class="alert"></div>
+
+  <script>
+    function addToCart(productName) {
+      const alertBox = document.getElementById('alertBox');
+      alertBox.textContent = `🛒 Đã thêm "${productName}" vào giỏ hàng!`;
+      alertBox.classList.add('show');
+
+      // Ẩn thông báo sau 2 giây
+      setTimeout(() => {
+        alertBox.classList.remove('show');
+      }, 2000);
+    }
+  </script>
+
+</body>
+</html>

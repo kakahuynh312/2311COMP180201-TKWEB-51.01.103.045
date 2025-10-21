@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ho_ca.css">
+    
+    
+</head>
+<body >
+    
+    <div id="content">
+        <!-- <div class="ocean"></div> -->
+        <div id="shark"><img src="./aquarium/shark.png" width="200px" height="150px"></div>
+        <div id="turtle"><img src="./aquarium/turtle.png" width="100px" height="auto"></div>
+        <div id="fish"><img src="./aquarium/goldFishSchool.png" width="70px" height="auto"></div>
+        <div id="diver1"><img src="./aquarium/diver1.png" width="150px" height="auto"></div>
+        <div id="diver2"><img src="./aquarium/diver2.png" width="150px" height="auto"></div>
+        <div id="diver3"><img src="./aquarium/diver3.png" width="150px" height="auto"></div>
+        <div id="faintschool"><img src="./aquarium/faintSchool.png" width="150px" height="auto"></div>      
+        <div id="faintschool2"><img src="./aquarium/faintSchool.png" width="150px" height="auto"></div>       
+        
+        <audio id="mysong" src="./music/benkiabautroi.mp3"></audio>
+        <button onclick="playMusic()">Phát nhạc</button>
+        <button onclick="changeBackground()">Đổi nền</button>
+
+        <script>
+            
+            var isPlaying=false;
+            function playMusic() {
+                var audio = document.getElementById("mysong");
+                
+                if (isPlaying == false) {
+                    audio.play();
+                    isPlaying = true;
+                    
+                } else {
+                    audio.pause();
+                    isPlaying = false;
+                    
+                }
+            }
+
+            function changeBackground() {
+                var body = document.body;
+
+                var images = [
+                    "url('aquarium/dai-duong-1492042552239.webp')",
+                    "url('aquarium/26830-361092105_tiny.jpg')",
+                    "url('aquarium/image.webp')",
+                    "url('aquarium/biensau.jpg')",
+                ];
+
+                var randomIndex = Math.floor(Math.random() * images.length);
+
+                body.style.backgroundImage = images[randomIndex];
+                body.style.backgroundSize = "cover";
+                body.style.backgroundRepeat = "no-repeat";
+                body.style.backgroundPosition = "0 0";
+                
+            }
+           
+    
+        </script>
+
+        
+
+        
+    </div>
+</body>
+</html>

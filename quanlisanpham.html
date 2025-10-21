@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý sản phẩm</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+
+    <style>
+        table td { padding: 10px; }
+        button {
+            background-color: cadetblue; border: none; border-radius: 10%;
+            color: aliceblue; padding: 5px 10px;
+        }
+        .container {
+            padding: 20px; background-color: rgb(156, 156, 156); width: 420px; margin-left: 0;
+        }
+        .container button {
+            background-color: darkgreen;
+        }
+        input{
+            width: 300px; height: 40px;
+        }
+    </style>
+</head>
+
+<body onload="show_product()">
+    <script>
+        let product_list = ['Sony Xperia', 'Samsung Galaxy', 'Nokia 6', 'Xiaomi Redimi Note 4',
+        'Apple iPhone 6S', 'Xiaomi Mi 5s Plus','Apple iPhone 8 Plus','Fujitsu F-04E','Oppo A71'];
+        
+        
+        function show_product() {
+           document.getElementById('result').innerHTML=+product_list.length+" products";
+            let table = `
+                <tr>
+                    <th>Product Name</th>
+                    <th>Edit</th>
+                    <th>Delete</th>   
+                    
+                </tr>
+            `; document.getElementById('result').innerHTML=+product_list.length+" products ";
+            for (let i = 0; i < product_list.length; i++) {
+                table += `
+                    <tr>
+                        <td>${product_list[i]}</td>
+                        <td><button onclick="edit_product(${i})">Edit</button></td>
+                        <td><button onclick="delete_product(${i})">Delete</button></td>
+                    </tr>
+                `;
+                
+            }
+            document.getElementById('show_product_list').innerHTML = table;
+        }
+
+        function add_product() {
+            let newProduct = document.getElementById('add_product').value.trim();
+            if (newProduct == '') return alert("Vui lòng nhập tên sản phẩm!");
+            product_list.push(newProduct);
+            show_product();
+            document.getElementById('add_product').value = '';
+        }
+
+        function delete_product(index) {
+            product_list.splice(index, 1);
+            show_product();
+        }
+
+        function edit_product(index) {
+            let newName = prompt("Nhập tên mới cho sản phẩm:", product_list[index]);
+            if (newName !== null && newName.trim() !== '') {
+                product_list[index] = newName.trim();
+                show_product();
+            }
+        }
+    </script>
+
+    <h1 class="mt-3 ms-3">Add New Product</h1>
+    <div class="container">
+        <input type="text" id="add_product" placeholder="New Product" >
+        <button onclick="add_product()">Add</button>
+    </div>
+     
+    <br>
+    <h1 >Display All Products</h1>
+    <table class="table table-striped table-hover" id="show_product_list"></table>
+    <div id="result"></div>
+</body>
+</html>

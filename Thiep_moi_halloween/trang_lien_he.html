@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="nenphu">
+    <header class="header">
+        <img src="./halloween/Iconcreme-Halloween-Pumpkin.512.png" width="80px" style="position: absolute; left: 20px; top: 0px;">
+        <img src="./halloween/Iconcreme-Halloween-Bat.512.png" width="80px" style="position: absolute; right: 20px; top: 0px;">
+    
+        <nav>
+        <ul>
+            <li><a href="./trangchu.html">Trang chủ</a></li>
+            <li><a href="./lich_su_halloween.html">Giới thiệu</a></li>
+            <li><a href="./san_pham_halloween.html">Sản phẩm</a></li>
+            <li><a href="./bo_suu_tap_anh_halloween.html">Hình ảnh</a></li>
+            <li><a href="./trang_lien_he.html">Liên hệ</a></li>
+            <li><a href="./dang_ky.html">Đăng ký</a></li>
+        </ul>
+        </nav>
+    </header>
+    <div style="text-align: center;">
+        <h2>Liên hệ với chúng tôi</h2>
+        <div class="khungchu">
+            <form>
+                <label for="name">Họ và tên:</label>
+                <input type="text" id="name" name="name" placeholder="Nhập tên của bạn" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Nhập email" required>
+
+                <label for="message">Lời nhắn:</label>
+                <textarea id="message" name="message" placeholder="Viết lời nhắn..." required></textarea>
+
+                <button type="submit" class="btn" onclick="gui()">Gửi liên hệ </button>
+            </form>  
+        </div>    
+    </div>
+    <script>
+        function gui() {
+        alert(" Cảm ơn những ý kiến của bạn, chúng tôi sẽ cố gắng phản hồi sớm nhất!");
+        }
+        form.reset()
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,218 @@
+
+    .background {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        background:url(./halloween/anh-nen-halloween-2.webp);
+        background-size: cover;
+        color: white;
+        /* overflow-x: hidden; */
+    }
+    .nenphu{
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        background:url(./halloween/halloween-background-54.jpg);
+        background-size: cover;
+        color: white;
+    }
+    .nenphu2{
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        background:url(./halloween/night-sky-stars-background.jpg!bw700);
+        background-size: cover;
+        color: white;
+    }
+
+    .header{
+        text-align: center; 
+        line-height: 50px;
+        background: rgba(46, 38, 34, 0.482);
+        padding: 20px;
+        height: 50px;
+        border-radius: 50pt;
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 45px;
+        color: rgb(188, 90, 9);
+        text-shadow: 0 0 15px rgba(20, 20, 19, 0.991);
+    }
+    h2 {
+        text-align: center;
+        color: orange;
+        font-size: 43px;
+        font-weight: bold;
+        text-shadow: 0 0 20px #ff6600;
+    }
+    .text{
+        font-size: 25px;
+        text-align: left;
+        color: rgb(232, 176, 107);
+        text-shadow: 1px 1px 5px rgb(92, 33, 33);
+        padding: 15px;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin: 0 15px;
+    }
+
+    nav a {
+        color: rgb(220, 197, 175);
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s;
+        text-shadow: 0 0 7px rgb(211, 4, 4);
+    }
+
+    nav a:hover {
+        color: white;
+        text-shadow: 0 0 10px orange;
+    }
+
+    .container {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .intro {
+    
+        display: inline-block;
+        padding: 30px;
+        border-radius: 50%;
+        max-width: 600px;
+       
+    }
+
+    .khungchu {
+        background: rgba(0, 0, 0, 0.6);
+        display: inline-block;
+        padding: 30px;
+        border-radius: 15px;
+        max-width: 600px;
+        box-shadow: 0 0 15px orange;
+    }
+
+    .khung{
+        background-color: rgba(128, 128, 128, 0.498);
+        border-radius: 20pt;
+        box-shadow: 0 0 20px rgba(104, 68, 43, 0.838);
+        width: 85%;
+        height: auto;
+        margin: 30px; padding: 3px;
+        display: inline-block;
+        
+    }
+
+    .btn {
+        display: inline-block;
+        margin-top: 20px;
+        background: orange;
+        color: black;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        background: white;
+        color: orange;
+    }
+
+    
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      color: #ff9933;
+      font-weight: 500;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+      font-size: 1rem;
+      background-color: #1a1a1a;
+      color: #fff;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    input:focus, textarea:focus {
+      border: 2px solid orange;
+      box-shadow: 0 0 10px #ff6600;
+    }
+   
+    #ghost {
+        position: absolute;
+        top: 120px;
+        left: -150px;
+        width: 100px;
+        z-index: 5;
+        animation: fly 10s linear infinite;
+    }
+
+    @keyframes fly {
+        0% { left: -150px; opacity: 0.2; transform: scale(0.8); }
+        25% { opacity: 1; }
+        45% { opacity: 0.5; }
+        50% { top: 160px; transform: scale(1.2); }
+        75% { top: 100px; opacity: 0.9; }
+        100% { left: 110%; opacity: 0.2; }
+    }
+
+    #ghost2 {
+        
+        position: absolute;
+        top: 300px;
+        right: -150px;
+        width: 100px;
+        z-index: 5;
+        animation: fly2 12s linear infinite;
+    }
+    
+    @keyframes fly2 {
+        0% { right: -150px; opacity: 0.2; transform: scaleX(-1);}
+        25% { opacity: 1;  transform: scaleX(-1);}
+        50% { top: 280px; transform: scale(1.2); transform: scaleX(-1); }
+        65% { opacity: 0.5;  transform: scaleX(-1);}
+        75% { top: 200px; opacity: 0.9;  transform: scaleX(-1);}
+        100% { right: 110%; opacity: 0.2;  transform: scaleX(-1);}
+    }
+
+    .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    padding: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+    }
+
+    .gallery img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50px;
+    border: 2px solid #ff6600;
+    transition: transform 0.4s, box-shadow 0.4s;
+    cursor: pointer;
+    }
+
+    .gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ff6600;
+    }
+    
+    
+
